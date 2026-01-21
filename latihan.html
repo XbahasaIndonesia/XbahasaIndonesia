@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Soal | E-Learning SMK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f4f7ff, #e3eeff);
+            color: #2c3e50;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e88e5, #0d47a1);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        header p {
+            opacity: 0.95;
+        }
+
+        nav {
+            background: white;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 15px;
+            box-shadow: 0 2px 15px rgba(0,0,0,.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1e88e5;
+            font-weight: 600;
+            padding: 8px 18px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #e3f2fd;
+            color: #0d47a1;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .title h2 {
+            font-size: 2rem;
+            color: #0d47a1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.1);
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(0,0,0,.15);
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 6px;
+            width: 100%;
+            background: linear-gradient(135deg, #1e88e5, #0d47a1);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #1565c0;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #1e88e5, #0d47a1);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .card a:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #0d47a1, #1565c0);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.95rem;
+        }
+
+        @media(max-width:768px){
+            header h1 { font-size: 1.8rem; }
+            .title h2 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>E-Learning SMK</h1>
+    <p>Latihan Soal Bahasa Indonesia Kelas XI</p>
+</header>
+
+<nav>
+    <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+    <a href="materi.html"><i class="fas fa-book"></i> Materi</a>
+    <a href="latihan.html"><i class="fas fa-pen"></i> Latihan Soal</a>
+</nav>
+
+<div class="container">
+    <div class="title">
+        <h2><i class="fas fa-graduation-cap"></i> Pilih Latihan Soal</h2>
+        <p>Kerjakan latihan soal sesuai bab yang telah dipelajari</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Bab 4: Teks Anekdot</h3>
+            <p>
+                Latihan soal untuk menguji pemahaman dalam menyusun Kritikan, Sindiran, Humor, dan Pesan Moral.
+            </p>
+            <a href="latihan-bab4.html">
+                <i class="fas fa-file-alt"></i> Mulai Latihan
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Bab 5: Teks Negosiasi</h3>
+            <p>
+                Latihan soal mengenai bernegosiasi dengan tepat
+            </p>
+            <a href="latihan-bab5.html">
+                <i class="fas fa-file-alt"></i> Mulai Latihan
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Bab 6: Cerita Rakyat/Hikayat</h3>
+            <p>
+                Latihan memahami cerita rakyat/hikayat
+            </p>
+            <a href="latihan-bab6.html">
+                <i class="fas fa-file-alt"></i> Mulai Latihan
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <i class="fas fa-laptop-code"></i> © 2026 E-Learning SMK | Media Pembelajaran Digital
+</footer>
+
+</body>
+</html>
